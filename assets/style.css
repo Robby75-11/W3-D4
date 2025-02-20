@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #81ff7fed;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 5px;
+    width: 450px;
+    margin: 20px auto;
+}
+.cell {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.selected {
+    background: orange;
+    color: white;
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
